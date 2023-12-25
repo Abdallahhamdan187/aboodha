@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" href="../photos/jordangov.jpg">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 105vh;
+            font-weight: 900;
+            font-size: 16px
+        }
+
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 500px;
+            width: 90%;
+        }
+
+        label {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            height: 50px;
+            font-size: 20px;
+        }
+
+        button {
+
+            background-color: #4caf50;
+            color: #ffffff;
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 300px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            height: 50px;
+            justify-content: center;
+            padding: 15px;
+
+
+        }
+
+        label,
+        input,
+        button {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        img {
+            width: 39%;
+            height: auto;
+
+
+        }
+
+        @media only screen and (max-width: 600px) {
+            body {
+                font-size: 18px;
+            }
+
+            form {
+                max-width: 100%;
+                padding: 10px;
+            }
+
+            button,
+            input {
+                width: 300px;
+                padding: 10px;
+                max-width: none;
+            }
+
+            img {
+                max-width: 100%;
+                margin-top: 20px;
+
+            }
+
+            input {
+                font-size: 16px;
+                height: 40px;
+            }
+
+            h1 {
+                max-width: 150px;
+                text-align: center;
+                font-size: medium;
+            }
+
+            label {
+                width: 100%;
+            }
+
+            button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="webfinal.html">
+        <img src="../photos/jordangov.jpg" alt=""><br><br>
+        <label for="e">Enter Your Email</label><br>
+        <input type="email" name="e" id="e" required placeholder="example@gmail.com">
+        <br><br>
+        <label for="pass">Enter Your Password</label><br>
+        <input type="password" name="pass" id="pass" required>
+        <br><br>
+        <button type="submit">Login</button><br>
+
+        <button type="button" onclick="redirectTo('signup.html')">Create Account</button>
+    </form>
+    <script>
+        function redirectTo(page) {
+            window.location.href = page;
+        }
+    </script>
+</body>
+
+</html>

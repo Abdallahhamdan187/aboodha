@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renew License</title>
+    <link rel="icon" href="../photos/jordangov.jpg">
+    <style>
+        * {
+            margin: 0;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-weight: 900;
+        }
+
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        label {
+            display: flex;
+            justify-content: center;
+
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            height: 50px;
+            font-size: 20px;
+        }
+
+        button {
+
+            background-color: #4caf50;
+            color: #ffffff;
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 300px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            height: 50px;
+            justify-content: center;
+
+
+
+
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+
+        }
+
+
+
+        .arr {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 10px;
+
+            left: 10px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            form {
+                max-width: 100%;
+                padding: 10px;
+            }
+
+            input {
+                max-width: 300px;
+                padding: 10px;
+            }
+
+            img {
+                max-width: 100%;
+                margin-bottom: 10px;
+
+            }
+
+            h1 {
+                max-width: 150px;
+                text-align: center;
+                font-size: medium;
+            }
+
+            button {
+                width: 100%;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a href="webfinal.html"><img class="arr" src="../photos/arrow-left-solid.svg" alt=""></a>
+    <form action="thanslic.html">
+        <h1>Car Registration</h1>
+        <img src="../photos/jordangov.jpg" alt=""><br><br>
+        <label for="license">license Number</label>
+        <input type="text" id="license" name="license" required>
+
+        <label for="Issue">Issue Date</label>
+        <input type="date" id="Issue" name="Issue" required>
+
+        <label for="year">Exp Date</label>
+        <input type="date" id="Exp" name="Exp" required>
+
+        <label for="plate">License Center:</label>
+        <input type="text" id="plate" name="plate" required><br><br>
+
+
+        <a href="thanslic.html"><button type="submit">Renew license</button></a>
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="icon" href="../photos/jordangov.jpg">
+    <style>
+        * {
+            margin: 0;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 105vh;
+            font-weight: 900;
+            font-size: 16px;
+        }
+
+        form {
+            background-color: #ffffff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-sizing: border-box;
+            max-width: 500px;
+            width: 90%;
+            height: auto;
+
+        }
+
+        label {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            height: 50px;
+            font-size: 20px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #ffffff;
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            height: 50px;
+            justify-content: center;
+            width: 100%;
+            max-width: 300px;
+
+        }
+
+        label,
+        input,
+        button {
+            margin-bottom: 15px;
+        }
+
+        .arr {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+
+
+        }
+
+        img {
+            width: 39%;
+            height: auto;
+            margin-bottom: 25px;
+
+        }
+
+        @media only screen and (min-width: 375px) and (max-width: 1024px) {
+            body {
+                font-size: 18px;
+                /* height: 120vh; */
+            }
+
+            form {
+                max-width: 100%;
+                padding: 15px;
+                margin-top: 300px;
+            }
+
+            button,
+            input {
+                max-width: 300px;
+                padding: 10px;
+                margin-bottom: 39px;
+
+            }
+
+            img {
+                max-width: 39%;
+                margin-bottom: 10px;
+
+            }
+
+            h1 {
+                max-width: 150px;
+                text-align: center;
+                font-size: medium;
+            }
+
+            label,
+            button {
+                width: 100%;
+            }
+
+            button {
+                margin-bottom: 100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a href="login.html"><img class="arr" src="../photos/arrow-left-solid.svg" alt=""></a>
+    <form action="webfinal.html">
+
+        <img src="../photos/jordangov.jpg" alt=""><br><br>
+        <label for="n">Your Name</label>
+        <input type="text" name="n" id="n" required>
+        <label for="e">Your Email</label>
+        <input type="email" name="e" id="e" required>
+        <label for="c">Your national number</label>
+        <input type="text" name="c" id="c" required>
+        <label for="l">Your license number</label>
+        <input type="text" name="l" id="l" required>
+        <button type="submit">Signup</button><br><br>
+
+
+    </form>
+
+</body>
+
+</html>
